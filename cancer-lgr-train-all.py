@@ -14,8 +14,6 @@ breast_cancer_wisconsin_diagnostic = fetch_ucirepo(id=17)
 features = breast_cancer_wisconsin_diagnostic.data.features 
 targets = breast_cancer_wisconsin_diagnostic.data.targets
 num_targets = targets['Diagnosis'].map({'M':0,'B':1})
-num_targets
-
 
 # Split dataset into 70% training and 30% testing sets
 train_set, test_set, train_labels, test_labels = train_test_split(
@@ -29,6 +27,7 @@ lgr = linear_model.LogisticRegression()
 lgr.fit(X = x, y = y)
 
 # Print model intercept and coefficients
+print("--- Model Intercept and Coefficients ---")
 print('Model Intercept:', lgr.intercept_)
 print('Model Coefficients:', lgr.coef_)
 
