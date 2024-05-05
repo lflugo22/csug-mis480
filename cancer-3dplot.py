@@ -26,6 +26,9 @@ ax.scatter(X['radius1'],
 ax.set_xlabel("radius1")
 ax.set_ylabel("texture1")
 ax.set_zlabel("perimiter1")
+plt.title("Breast Cancer Scatter Plot - Three Features")
 plt.show()
 
 
+
+# %%
